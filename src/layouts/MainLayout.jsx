@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import { FaWhatsapp } from 'react-icons/fa'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -18,6 +19,16 @@ export default function MainLayout() {
                 <Outlet />
             </main>
             <Footer />
+            <a
+                href="https://wa.me/6282322953482"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with Teknik Mebel Furniture on WhatsApp"
+                className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-green-500/30 transition-transform duration-200 hover:scale-105"
+            >
+                <FaWhatsapp className="text-xl" />
+                <span>WhatsApp</span>
+            </a>
         </div>
     )
 }
