@@ -4,13 +4,13 @@ import TeamCard from '../components/TeamCard'
 
 export default function About() {
     return (
-        <div className="space-y-16 bg-light py-20 dark:bg-slate-950">
+        <div className="container space-y-16 bg-light py-20 dark:bg-slate-950">
             <section className="relative overflow-hidden rounded-[2rem] bg-[url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center px-8 py-24 text-white">
                 <div className="absolute inset-0 bg-slate-950/60" />
                 <div className="container relative text-center">
                     <p className="text-sm uppercase tracking-[0.3em] text-secondary/90">About Us</p>
-                    <h1 className="mt-4 text-4xl font-semibold sm:text-5xl">Company History & Story</h1>
-                    <p className="mx-auto mt-4 max-w-2xl text-slate-100/90">Teknik Mebel Furniture has been crafting custom interiors that blend function, beauty, and durability for modern Indonesian homes and businesses.</p>
+                    <h1 className="mt-4 text-4xl font-semibold sm:text-5xl">Sejarah Perusahaan dan Misi</h1>
+                    <p className="mx-auto mt-4 max-w-2xl text-slate-100/90">Teknik Mebel Furniture menyediakan jasa interior dan furniture custom berkualitas untuk rumah, kantor, dan ruang usaha dengan desain fungsional, modern, dan tahan lama.</p>
                     <p className="mt-4 text-sm uppercase tracking-[0.3em] text-secondary/90">Home & Interior Specialist</p>
                 </div>
             </section>
@@ -24,17 +24,17 @@ export default function About() {
                     />
                 </motion.div>
                 <div className="space-y-6">
-                    <p className="text-sm uppercase tracking-[0.24em] text-primary">Our Commitment</p>
-                    <h2 className="text-3xl font-semibold text-slate-950 dark:text-white">A tradition of quality furniture and interior experiences</h2>
-                    <p className="text-slate-600 dark:text-slate-400">We combine craftsmanship with thoughtful design to deliver furniture that fits each client’s lifestyle. With years of experience, we focus on quality materials, precise execution, and honest communication throughout the project.</p>
+                    <p className="text-sm uppercase tracking-[0.24em] text-primary">Komitmen Kami</p>
+                    <h2 className="text-3xl font-semibold text-slate-950 dark:text-white">Mengutamakan Kualitas dan Kepuasan Pelanggan</h2>
+                    <p className="text-slate-600 dark:text-slate-400">Kami berkomitmen untuk memberikan produk dan layanan terbaik kepada pelanggan kami dengan fokus pada kualitas, kepuasan, dan kepercayaan.</p>
                     <div className="grid gap-4 sm:grid-cols-2">
                         <div className="rounded-[1.5rem] bg-white p-6 shadow-soft dark:bg-slate-900">
-                            <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Years of Experience</h3>
-                            <p className="mt-3 text-slate-600 dark:text-slate-400">More than a decade delivering cabinetry, wardrobes, and full interior projects across Indonesia.</p>
+                            <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Tahun Pengalaman</h3>
+                            <p className="mt-3 text-slate-600 dark:text-slate-400">Lebih dari satu dekade dalam menghadirkan solusi kabinet, lemari, dan proyek interior lengkap di seluruh Indonesia.</p>
                         </div>
                         <div className="rounded-[1.5rem] bg-white p-6 shadow-soft dark:bg-slate-900">
-                            <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Quality First</h3>
-                            <p className="mt-3 text-slate-600 dark:text-slate-400">Every job is built with durable materials, expert finishing, and thoughtful user experience.</p>
+                            <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Kualitas Terdepan</h3>
+                            <p className="mt-3 text-slate-600 dark:text-slate-400">Setiap proyek dibangun dengan bahan tahan lama, finishing ahli, dan pengalaman pengguna yang dipikirkan .</p>
                         </div>
                     </div>
                 </div>
@@ -44,18 +44,18 @@ export default function About() {
                 <div className="grid gap-6 md:grid-cols-2">
                     <div className="rounded-[1.5rem] bg-white p-8 shadow-soft dark:bg-slate-900">
                         <h3 className="text-2xl font-semibold text-slate-950 dark:text-white">Vision</h3>
-                        <p className="mt-4 text-slate-600 dark:text-slate-400">To be the preferred partner for custom furniture and interior solutions that elevate homes and workplaces across Indonesia.</p>
+                        <p className="mt-4 text-slate-600 dark:text-slate-400">Menjadi mitra pilihan untuk solusi furnitur dan interior yang meningkatkan rumah dan tempat kerja di seluruh Indonesia.</p>
                     </div>
                     <div className="rounded-[1.5rem] bg-white p-8 shadow-soft dark:bg-slate-900">
                         <h3 className="text-2xl font-semibold text-slate-950 dark:text-white">Mission</h3>
-                        <p className="mt-4 text-slate-600 dark:text-slate-400">Deliver tailored furniture, support clients at every step, and create spaces that feel beautiful, functional, and enduring.</p>
+                        <p className="mt-4 text-slate-600 dark:text-slate-400">Menyediakan furnitur yang disesuaikan, mendukung klien di setiap langkah, dan menciptakan ruang yang terasa indah, fungsional, dan tahan lama.</p>
                     </div>
                 </div>
 
                 <div className="space-y-4">
                     <p className="text-sm uppercase tracking-[0.24em] text-primary">Our Team</p>
-                    <h2 className="text-3xl font-semibold text-slate-950 dark:text-white">Dedicated professionals behind every project</h2>
-                    <p className="max-w-2xl text-slate-600 dark:text-slate-400">From design to production and finishing, our team brings expertise in furniture, interior planning, and client support.</p>
+                    <h2 className="text-3xl font-semibold text-slate-950 dark:text-white">Pengembang Terbaik di Setiap Proyek</h2>
+                    <p className="max-w-2xl text-slate-600 dark:text-slate-400">Tim kami terdiri dari profesional berpengalaman yang berdedikasi untuk memberikan layanan terbaik dalam desain dan produksi furnitur serta interior.</p>
                 </div>
 
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

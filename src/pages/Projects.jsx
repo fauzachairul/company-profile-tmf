@@ -29,7 +29,7 @@ export default function Projects() {
     }
 
     return (
-        <div className="space-y-16 bg-light py-20 dark:bg-slate-950">
+        <div className="container space-y-16 bg-light py-20 dark:bg-slate-950">
             <section className="relative overflow-hidden rounded-[2rem] bg-[url('https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center px-8 py-24 text-white">
                 <div className="absolute inset-0 bg-slate-950/60" />
                 <div className="container relative text-center">

@@ -12,7 +12,15 @@ const navLinks = [
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
-    const [darkMode, setDarkMode] = useState(false)
+    const [darkMode, setDarkMode] = useState(() => {
+        if (typeof window === 'undefined') return false
+
+        const storedTheme = window.localStorage.getItem('theme')
+        if (storedTheme === 'dark') return true
+        if (storedTheme === 'light') return false
+
+        return window.matchMedia('(prefers-color-scheme: dark)').matches
+    })
 
     useEffect(() => {
         const handler = () => setIsScrolled(window.scrollY > 20)
@@ -22,6 +30,7 @@ export default function Navbar() {
 
     useEffect(() => {
         document.documentElement.classList.toggle('dark', darkMode)
+        window.localStorage.setItem('theme', darkMode ? 'dark' : 'light')
     }, [darkMode])
 
     return (
