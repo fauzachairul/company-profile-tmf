@@ -5,12 +5,12 @@ const team = [
         position: 'Owner/Worker',
         photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
     },
-    {
-        id: 2,
-        name: 'Yuliana Rahmawati',
-        position: 'Keuangan',
-        photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
-    },
+    // {
+    //     id: 2,
+    //     name: 'Yuliana Rahmawati',
+    //     position: 'Keuangan',
+    //     photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
+    // },
     {
         id: 3,
         name: 'Ribut Nugroho',

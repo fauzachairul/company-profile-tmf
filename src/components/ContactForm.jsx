@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export default function ContactForm() {
-    const [form, setForm] = useState({ name: '', phone: '', email: '', subject: '', message: '' })
+    const [form, setForm] = useState({ name: '', phone: '', email: '', message: '' })
     const [errors, setErrors] = useState({})
     const [submitted, setSubmitted] = useState(false)
 
@@ -17,14 +17,13 @@ export default function ContactForm() {
         if (!form.name.trim()) nextErrors.name = 'Name is required.'
         if (!form.phone.trim()) nextErrors.phone = 'Phone number is required.'
         if (!form.email.trim() || !/^[\w-.]+@[\w-]+\.[a-z]{2,}$/i.test(form.email)) nextErrors.email = 'Valid email is required.'
-        if (!form.subject.trim()) nextErrors.subject = 'Subject is required.'
         if (!form.message.trim()) nextErrors.message = 'Message is required.'
 
         setErrors(nextErrors)
 
         if (Object.keys(nextErrors).length === 0) {
             const phoneNumber = '6282322953482'
-            const message = `Hello Teknik Mebel Furniture, Saya ${form.name}.\nPhone: ${form.phone}\nEmail: ${form.email}\nSubject: ${form.subject}\nMessage: ${form.message}`
+            const message = `Hello Teknik Mebel Furniture, Saya ${form.name}.\nPhone: ${form.phone}\nEmail: ${form.email}\nMessage: ${form.message}`
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 
             setSubmitted(true)
@@ -72,16 +71,6 @@ export default function ContactForm() {
                             className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-primary dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
                         />
                         {errors.email && <p className="text-xs text-red-600">{errors.email}</p>}
-                    </label>
-                    <label className="space-y-2 text-sm text-slate-700 dark:text-slate-300">
-                        <span>Subject</span>
-                        <input
-                            name="subject"
-                            value={form.subject}
-                            onChange={handleChange}
-                            className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-primary dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
-                        />
-                        {errors.subject && <p className="text-xs text-red-600">{errors.subject}</p>}
                     </label>
                 </div>
                 <label className="mt-4 flex flex-col gap-2 text-sm text-slate-700 dark:text-slate-300">

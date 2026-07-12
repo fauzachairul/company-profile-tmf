@@ -37,8 +37,8 @@ export default function Navbar() {
         <header className={`fixed inset-x-0 top-0 z-50 transition-shadow duration-300 ${isScrolled ? 'shadow-soft bg-white/90 backdrop-blur-xl dark:bg-slate-950/90' : 'bg-transparent'} `}>
             <div className="container flex h-20 items-center justify-between gap-4">
                 <Link to="/" className="flex items-center gap-3 text-dark dark:text-slate-100">
-                    <div className="h-11 w-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center font-semibold shadow-sm">
-                        TM
+                    <div className="flex h-11 w-11 items-center justify-center rounded bg-white/90 shadow-sm dark:bg-slate-900/80">
+                        <img src="/assets/images/logo.webp" alt="Teknik Mebel logo" className="h-10 w-10 rounded object-cover" />
                     </div>
                     <div>
                         <p className="text-sm font-medium">Teknik Mebel</p>

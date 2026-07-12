@@ -31,8 +31,8 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                         <p className="text-sm uppercase tracking-[0.3em] text-secondary">Workshop</p>
-                        <h2 className="mt-2 text-3xl font-semibold">Quality craftsmanship with every detail.</h2>
-                        <p className="mt-3 max-w-md text-sm text-slate-200">From kitchen sets to custom furniture, our process brings beauty and precision to every project.</p>
+                        <h2 className="mt-2 text-3xl font-semibold">Mengutamakan kualitas pengerjaan di setiap detail.</h2>
+                        <p className="mt-3 max-w-md text-sm text-slate-200">Dari kitchen set hingga furniture custom, proses kami membawa keindahan dan presisi ke dalam setiap proyek.</p>
                     </div>
                 </div>
             </section>
